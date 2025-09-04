@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos Conqueror Demo</title>
+    <link rel="stylesheet" href="projectpage.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-link">← Back to Portfolio</a>
+        <div class="proj1-header-content">
+            <h1 class="project-page-title">Cosmos Conqueror</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="description">
+            <h2 class="description-title">Project Deep Dive</h2>
+            <p class="description-text">
+                Cosmos Conqueror was developed as part of my coursework for my games programming module during my second year at Northumbria University.
+                It was my first game made in C++ inside a primitive engine built around the SDL library provided by the university. Because of the limitations
+                of the engine, I was working at a lower level of abstraction than commercial engines like Unreal Engine, which provided me with a deeper understanding
+                of the fundamentals of game development.
+            </p>
+            
+            <div class="project-showcase">
+                <div class="project-header">
+                    <h3 class="project-title">Cosmos Conqueror</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">OOP</span>
+                        <span class="tech-tag">SDL 2</span>
+                    </div>
+                </div>
+                
+                <div class="code-snippets">
+                    <div class="code-snippet-container">
+                        <div class="code-snippet-header">
+                            <span class="snippet-title">Collision Detection System</span>
+                            <span class="snippet-language">C++</span>
+                        </div>
+                        <div class="code-image-wrapper">
+                            <img src="images/CC_CodeSnippet1.png" alt="Collision Detection Code" class="code-snippet-image">
+                            <div class="code-hover-explanation">
+                                <h4>Collision Detection Logic</h4>
+                                <p>This function implements circular collision detection by calculating the distance between two objects and comparing it to the sum of their radii. Essential for detecting when the player's ship collides with asteroids or power-ups in the game world.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="code-snippet-container">
+                        <div class="code-snippet-header">
+                            <span class="snippet-title">Spaceship Physics</span>
+                            <span class="snippet-language">C++</span>
+                        </div>
+                        <div class="code-image-wrapper">
+                            <img src="images/CC_CodeSnippet2.png" alt="Spaceship Movement Code" class="code-snippet-image">
+                            <div class="code-hover-explanation">
+                                <h4>Realistic Movement System</h4>
+                                <p>The spaceship's physics system applies thrust-based acceleration using trigonometry, implements friction for momentum decay, and handles screen wrapping. This creates the classic Asteroids-style movement feel with smooth, realistic physics.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<script src="image-modal.js"></script>
+</body>
+</html>
