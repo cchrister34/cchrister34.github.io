@@ -257,6 +257,67 @@ main {
     font-weight: 600;
 }
 
+/* YouTube Embed Styles */
+.youtube-embed {
+    width: 100%;
+    height: 100%;
+    border: none;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+}
+
+.project-card:hover .youtube-embed {
+    transform: scale(1.05);
+}
+
+.project-video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    background: #000; 
+    border-radius: 12px; /
+}
+
+.project-video-container iframe.project-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: cover;
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    padding: 30px 20px 20px;
+    color: white;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none; 
+}
+
+.project-card:hover .project-overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.project-card {
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+
+.project-card:hover .youtube-thumbnail {
+    transform: scale(1.05);
+}
+
 /* Education & Skills Section */
 .education-skills-container {
     display: grid;
