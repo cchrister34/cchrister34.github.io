@@ -227,11 +227,6 @@ main {
     color: #ffffff;
 }
 
-.snippet-title::before {
-    content: '⚡';
-    font-size: 1.1rem;
-    color: #be0000;
-}
 
 .snippet-language {
     background: linear-gradient(135deg, #3a3a3a 0%, #be0000 100%);
