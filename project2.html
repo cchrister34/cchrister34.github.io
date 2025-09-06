@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bad Bot Demo</title>
+    <link rel="stylesheet" href="projectpage.css">
+</head>
+<body>
+<header>
+    <a href="index.html" class="back-link">← Back to Portfolio</a>
+    <h1 class="project-page-title">Bad Bot</h1>
+</header>
+    <main>
+        <section class="description">
+            <h2 class="description-title">About the project</h2>
+            <p class="description-text">
+                Bad Bot is my first project in Unreal Engine, created to help me learn the basics of blueprints and gain more experience in the engine.
+                The game is a simple third-person shooter where I focused on building simple systems such as player movement using input mappings and input actions, 
+                shooting using line traces and a crosshair, and very basic enemy AI that tracks the pawns' positon and shoots at them in addition to sound and niagra systems
+                to enhance the overall experience.
+            </p>
+            
+            <div class="project-showcase">
+                <div class="project-header">
+                    <h3 class="project-title">Bad Bot</h3>
+                    <div class="project-tech">
+                        <span class="tech-tag">Unreal Engine</span>
+                        <span class="tech-tag">Blueprints</span>
+                    </div>
+                </div>
+                
+                <div class="code-snippets">
+                    <div class="code-snippet-container">
+                        <div class="code-snippet-header">
+                            <span class="snippet-title">Enemy Fire Rifle Logic</span>
+                            <span class="snippet-language">Blueprint</span>
+                        </div>
+                        <div class="code-image-wrapper">
+                            <img src="images/BB_CodeSnippet3.png" alt="Input Actions" class="code-snippet-image">
+                            <div class="code-hover-explanation">
+                                <h4>Enemy Fire logic Code</h4>
+                                <p>
+                                    The enemy fire rifle logic is set up by storing the pawn object in a variable using a dynamic cast to access the pawn's location.
+                                    Then by using a looping timer based on an event dispatcher that is triggered after a two second delay. In response to this event, 
+                                    a fire blaster function is called that spawns blaster beams at the pawn's rifle sockets' location.
+                                    <br>
+                                    Click to expand image.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="code-snippet-container">
+                        <div class="code-snippet-header">
+                            <span class="snippet-title">Line Trace Logic</span>
+                            <span class="snippet-language">Blueprint</span>
+                        </div>
+                        <div class="code-image-wrapper">
+                            <img src="images/BB_BP_Snippet2.png" alt="Line Trace Logic" class="code-snippet-image">
+                            <div class="code-hover-explanation">
+                                <h4>Line Trace Logic</h4>
+                                <p>
+                                    The line trace logic is used to determine if blaster-beam projectiles hit an actor. This is then used to call a blueprint interface 
+                                    function, set in the blaster-beam blueprint that applies damage to the hit actor. The respective actors implement this interface to handle taking damage based 
+                                    on their own health variables.
+
+                                    <br>
+                                    Click to expand image.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <section class="description">
+            <h2 class="description-title">What I learned</h2>
+            <p class="description-text">
+                This project was my first experience working in Unreal Engine, and it provided me with a solid foundation in using blueprints to create game mechanics and systems. Bad Bot taught me 
+                re-usable engine skills that I can apply to future projetcs, such as setting up input mappings and actions, creating line traces for shooting mechanics, sound and niagra systems, blueprint interfaces and 
+                the importance of using functions in blueprints to avoid spaghetti code.
+                <br><br>
+                One of the struggles I faces during this project was learning how to implement the correct functions and nodes in blueprints to achieve the desired functionality, as the blueprint system exposed me to 
+                a wide range of nodes and functions that I had to learn to use effectively. However, through trial and error, as well as consulting online resources and documentation, I was able to overcome these challenges and
+                create a functional game.
+                <br><br>
+                Overall, this project was a valuable learning experience that helped me develop my skills in Unreal Engine and blueprints, and I look forward to applying these skills to future projects.
+            </p>
+    </main>
+
+
+<script src="image-modal.js"></script>
+</body>
+</html>

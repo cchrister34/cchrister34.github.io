@@ -46,10 +46,10 @@
                         <div class="code-image-wrapper">
                             <img src="images/CC_CodeSnippet1.png" alt="Spaceship Update Logic" class="code-snippet-image">
                             <div class="code-hover-explanation">
-                                <h4>Collision Detection Logic</h4>
+                                <h4>Spcaeship Update Logic</h4>
                                 <p>
                                     This function handles the player controlled objects's update logic, it uses frametime to execute repeatedly during the game loop, in the spaceship class it handles movement using WASD keys and roatation using the Q and E keys.
-                                    It also handles camera postisioning to follow the player, sound effects for thrusting and the ability to create objects such as bullets and flares 
+                                    It also handles camera positioning to follow the player, sound effects for thrusting and the ability to create objects such as bullets and flares 
                                     through the use of pointers as the shapeship uses a "has-a" relationship with these objects and therefore the logic for creating bullets and flares
                                     is contained within the spaceship class.
                                     <br>
@@ -67,11 +67,11 @@
                         <div class="code-image-wrapper">
                             <img src="images/CC_collision.png" alt="Spaceship Collision Code" class="code-snippet-image">
                             <div class="code-hover-explanation">
-                                <h4>Realistic Movement System</h4>
+                                <h4>Collision System</h4>
                                 <p>
                                     The Process Collision function uses the GameObject superclass to check for collisions 
                                     between game objects using if statements to check the type of object that the spaceship has collided with and then execute the relevant logic.
-                                    The engine also included an event system that allowed for more complex interactions between objects by addint the event to an enum that is then 
+                                    The engine also included an event system that allowed for more complex interactions between objects by setting the event from an "Event Type" enum that is then 
                                     accessed in the game manager's Handle Event function to execute the relevant logic for the event.
                                     <br>
                                     Click to expand image.
