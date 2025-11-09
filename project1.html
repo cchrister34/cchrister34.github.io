@@ -22,9 +22,8 @@
             <h2 class="description-title">About the project</h2>
             <p class="description-text">
                 Cosmos Conqueror was developed as part of my coursework for my games programming module during my second year at Northumbria University.
-                It was my first game made in C++ inside a primitive engine built around the SDL library provided by the university. Because of the limitations
-                of the engine, I was working at a lower level of abstraction than commercial engines like Unreal Engine, which provided me with a deeper understanding
-                of the fundamentals of game development.
+                It was my first game made in C++ inside a primitive engine built using the SDL2 library provided by the university. I was provided with a primitve 
+                engine framework that handled basic rendering, input, and game loop functionality, and I was tasked with building a simple 2D space shooter game on top of it.
             </p>
             
             <div class="project-showcase">
@@ -48,10 +47,6 @@
                             <div class="code-hover-explanation">
                                 <h4>Spcaeship Update Logic</h4>
                                 <p>
-                                    This function handles the player controlled objects's update logic, it uses frametime to execute repeatedly during the game loop, in the spaceship class it handles movement using WASD keys and roatation using the Q and E keys.
-                                    It also handles camera positioning to follow the player, sound effects for thrusting and the ability to create objects such as bullets and flares 
-                                    through the use of pointers as the shapeship uses a "has-a" relationship with these objects and therefore the logic for creating bullets and flares
-                                    is contained within the spaceship class.
                                     <br>
                                     Click to expand image.
                                 </p>
@@ -69,10 +64,6 @@
                             <div class="code-hover-explanation">
                                 <h4>Collision System</h4>
                                 <p>
-                                    The Process Collision function uses the GameObject superclass to check for collisions 
-                                    between game objects using if statements to check the type of object that the spaceship has collided with and then execute the relevant logic.
-                                    The engine also included an event system that allowed for more complex interactions between objects by setting the event from an "Event Type" enum that is then 
-                                    accessed in the game manager's Handle Event function to execute the relevant logic for the event.
                                     <br>
                                     Click to expand image.
                                 </p>
@@ -86,16 +77,22 @@
             <section class="description">
             <h2 class="description-title">What I learned</h2>
             <p class="description-text">
-                This project was my first experience working with C++ in a game development context, and it provided me with a solid foundation in the language and its application in game development.
-                Working with a primitive engine built around SDL allowed me to understand the lower-level workings of game engines, including rendering, input handling, and game loop management.
-                I also gained experience in object-oriented programming (OOP) principles.
+                This project was my first experience working with C++ in a game development context, and it provided me with a solid foundation through the use of object oriented programming principles.
+                I learned how to create classes and objects, implement inheritance and polymorphism, and manage memory using pointers and dynamic allocation. 
+            </p>
                 <br><br>
-                One of the key challenges I faced during this project was coupling as before creating the project, i did not properly plan out how game objects would interact with each other,
-                which led to tight coupling between classes. This made it diffiucult to make changes as my project progressed, specifically to the spaceship class which became monolithic with the amount 
-                of logic implemented.
+            <h2 class = "description-title">Problems Faced</h2>
+            <p class="description-text">
+                One of the key challenges I faced during this project was coupling as before creating the project, I did not properly plan out how game objects would interact with each other,
+                which led to tight coupling between classes. This made it diffiucult to make changes as my project progressed, the spaceship class quickly became monolithic with the amount 
+                of logic implemented. To solve this, i would refacrtor the code to use interfaces and abstract classes to define common behaviours and interactions between game objects.
+            </p>    
                 <br><br>
-                Overall, this project was a valuable learning experience that helped me develop my skills in C++ programming and game development. It showed me the importance of planning and designing
-                by utilsing inheritance and polymorphism to create a more flexible and maintainable codebase.
+            <h2 class = "description-title">Conclusion</h2>
+            <p class="description-text">
+                Overall, this project was a valuable learning experience that provided me with a solid foundation in C++ and object oriented programming principles. It also taught me the importance of 
+                planning and designing my code before implementation to avoid tight coupling and ensure maintainability as the game grows in complexity. I am proud of what I accomplished with Cosmos Conqueror,
+                and I look forward to applying the skills and knowledge I gained to future game development projects.
             </p>
     </main>
 

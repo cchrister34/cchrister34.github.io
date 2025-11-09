@@ -41,9 +41,6 @@
                             <div class="code-hover-explanation">
                                 <h4>Enemy Fire logic Code</h4>
                                 <p>
-                                    The enemy fire rifle logic is set up by storing the pawn object in a variable using a dynamic cast to access the pawn's location.
-                                    Then by using a looping timer based on an event dispatcher that is triggered after a two second delay. In response to this event, 
-                                    a fire blaster function is called that spawns blaster beams at the pawn's rifle sockets' location.
                                     <br>
                                     Click to expand image.
                                 </p>
@@ -61,9 +58,6 @@
                             <div class="code-hover-explanation">
                                 <h4>Line Trace Logic</h4>
                                 <p>
-                                    The line trace logic is used to determine if blaster-beam projectiles hit an actor. This is then used to call a blueprint interface 
-                                    function, set in the blaster-beam blueprint that applies damage to the hit actor. The respective actors implement this interface to handle taking damage based 
-                                    on their own health variables.
 
                                     <br>
                                     Click to expand image.
@@ -78,15 +72,22 @@
             <section class="description">
             <h2 class="description-title">What I learned</h2>
             <p class="description-text">
-                This project was my first experience working in Unreal Engine, and it provided me with a solid foundation in using blueprints to create game mechanics and systems. Bad Bot taught me 
-                re-usable engine skills that I can apply to future projetcs, such as setting up input mappings and actions, creating line traces for shooting mechanics, sound and niagra systems, blueprint interfaces and 
+                This project was my first experience working in Unreal Engine, and it provided me with a solid foundation within the editor, learning how to create and move objects to create a small game using blueprints. Bad Bot taught me 
+                re-usable engine skills that I can apply to future projects, such as setting up input mappings and actions, creating line traces for shooting mechanics, sound and niagra systems, blueprint interfaces and 
                 the importance of using functions in blueprints to avoid spaghetti code.
                 <br><br>
-                One of the struggles I faces during this project was learning how to implement the correct functions and nodes in blueprints to achieve the desired functionality, as the blueprint system exposed me to 
-                a wide range of nodes and functions that I had to learn to use effectively. However, through trial and error, as well as consulting online resources and documentation, I was able to overcome these challenges and
-                create a functional game.
+            </p>
+            <h2 class="description-title">Problems Faced</h2>
+            <p class="description-text">
+                One of the struggles I faced during this project was learning how to implement and maintain clean code within blueprints. Since blueprints are visual scripts, it can be easy to create a lot of dependencies between classes,
+                leading to slower performance and difficulty in debugging. To overcome this, I consulted online resources and the Unreal Engine documentation to learn best practices for blueprint organisation and structure. This led to me creating blueprint
+                interfaces to define common behaviours between different classes and using functions to encapsulate logic that can be reused across multiple blueprints.
+            </p>
                 <br><br>
-                Overall, this project was a valuable learning experience that helped me develop my skills in Unreal Engine and blueprints, and I look forward to applying these skills to future projects.
+            <h2 class="description-title">Conclusion</h2>
+            <p class="description-text">
+                Overall, this project was a valuable learning experience that helped me develop my skills in Unreal Engine and blueprints. I learned how to naviagte the engine more effectively and create basic game mechanics using visual scripting. 
+                I am proud of what I accomplished with Bad Bot, and I look forward to applying these skills to future projects.
             </p>
     </main>
 
