@@ -93,6 +93,21 @@ header {
     box-shadow: 0 8px 25px rgba(75, 0, 0, 0.4);
 }
 
+.dissertation-button{
+    position: absolute;
+    top: 20px;
+    right: 180px;
+    padding: 10px 18px;
+    background: linear-gradient(135deg, #3a3a3a 0%, #be0000 100%);
+    color: #ffffff;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(75, 0, 0, 0.3);
+}
+
 
 main {
     margin: 40px 20px;

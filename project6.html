@@ -10,6 +10,12 @@
 <header>
     <a href="index.html" class="back-link">← Back to Portfolio</a>
     <h1 class="project-page-title">Multiplayer Third-Person Shooter</h1>
+    <a href=https://github.com/cchrister34/Unreal-Multiplayer-Demo
+       class="github-button"
+       target="_blank"
+       rel="noopener noreferrer">
+       View on GitHub
+    </a>
 </header>
     <main>
         <section class="description">
@@ -33,13 +39,13 @@
                 <div class="code-snippets">
                     <div class="code-snippet-container">
                         <div class="code-snippet-header">
-                            <span class="snippet-title">Behaviour Tree Base Task Code</span>
+                            <span class="snippet-title">Lobby Logic</span>
                             <span class="snippet-language">C++</span>
                         </div>
                         <div class="code-image-wrapper">
-                            <img src="images/AICompimg1.png" alt="Behaviour Tree Base Task Code" class="code-snippet-image">
+                            <img src="images/ccmp_snippet.png" alt="Lobby Logic" class="code-snippet-image">
                             <div class="code-hover-explanation">
-                                <h4>Behaviour Tree Base Task Code</h4>
+                                <h4>Lobby Logic</h4>
                                 <p>
                                     <br>
                                     Click to expand image.
@@ -50,13 +56,13 @@
                     
                     <div class="code-snippet-container">
                         <div class="code-snippet-header">
-                            <span class="snippet-title">Find Food Task</span>
+                            <span class="snippet-title">Replicated Enemy Attacks</span>
                             <span class="snippet-language">C++</span>
                         </div>
                         <div class="code-image-wrapper">
-                            <img src="images/AIcompimg2.png" alt = "Find Food Task" class="code-snippet-image">
+                            <img src="images/ccmp_snippet2.png" alt = "Replicated Enemy Attacks" class="code-snippet-image">
                             <div class="code-hover-explanation">
-                                <h4>Find Food Task</h4>
+                                <h4>Replicated Enemy Attacks</h4>
                                 <p>
 
                                     <br>
@@ -68,13 +74,13 @@
 
                      <div class="code-snippet-container">
                         <div class="code-snippet-header">
-                            <span class="snippet-title">Behaviour Tree</span>
-                            <span class="snippet-language">Behaviour Tree Asset</span>
+                            <span class="snippet-title">Enemy AI Logic</span>
+                            <span class="snippet-language">C++</span>
                         </div>
                         <div class="code-image-wrapper">
-                            <img src="images/AIcompimg3.png" alt = "Behaviour Tree" class="code-snippet-image">
+                            <img src="images/ccmp_snippet3.png" alt = "Enemy AI Logic" class="code-snippet-image">
                             <div class="code-hover-explanation">
-                                <h4>Behaviour Tree</h4>
+                                <h4>Enemy AI Logic</h4>
                                 <p>
 
                                     <br>
@@ -86,13 +92,48 @@
 
                      <div class="code-snippet-container">
                         <div class="code-snippet-header">
-                            <span class="snippet-title">Utiltiy State Tree</span>
-                            <span class="snippet-language">Utility State Tree</span>
+                            <span class="snippet-title">Replicated Player Shooting Logic</span>
+                            <span class="snippet-language">C++</span>
                         </div>
                         <div class="code-image-wrapper">
-                            <img src="images/AIcompimg4.png" alt = "Utility State Tree" class="code-snippet-image">
+                            <img src="images/ccmp_snippet4.png" alt = "Player Shooting Logic" class="code-snippet-image">
                             <div class="code-hover-explanation">
-                                <h4>Utility State Tree</h4>
+                                <h4>Player Shooting Logic</h4>
+                                <p>
+
+                                    <br>
+                                    Click to expand image.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="code-snippet-container">
+                        <div class="code-snippet-header">
+                            <span class="snippet-title">Replicated Player Death</span>
+                            <span class="snippet-language">C++</span>
+                        </div>
+                        <div class="code-image-wrapper">
+                            <img src="images/ccmp_snippet5.png" alt = "Replicated Player Death" class="code-snippet-image">
+                            <div class="code-hover-explanation">
+                                <h4>Replicated Player Death</h4>
+                                <p>
+
+                                    <br>
+                                    Click to expand image.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="code-snippet-container">
+                        <div class="code-snippet-header">
+                            <span class="snippet-title">Occlustion Masking</span>
+                            <span class="snippet-language">C++</span>
+                        </div>
+                        <div class="code-image-wrapper">
+                            <img src="images/ccmp_snippet7.png" alt = "Occlustion Masking" class="code-snippet-image">
+                            <div class="code-hover-explanation">
+                                <h4>Occlustion Masking</h4>
                                 <p>
 
                                     <br>
@@ -108,24 +149,22 @@
             <section class="description">
             <h2 class="description-title">What I learned</h2>
             <p class="description-text">
-                Not only was this my first experience writing C++ in Unreal Engine, it was my first time using dedicated decision-making frameworks to program AI behaviour. This required adapting
-                my C++ programming skills developed from previous projects to work within the Unreal Engine framework and learning how to structure code to work with the engine's AI systems. I also gained a 
-                deeper understanding of the differences between behaviour trees and utility AI, and how to implement both in Unreal Engine 5.
-                <br><br>
+                I learned fundamentals of multiplayer in Unreal Engine using the client-server model. Developing an understaning of replication across the network using Unreal's frameworks.
+                I learned the importance of not overloading the server with packets to prevent lag and desync alongside how to send information across the network to maintain a stable connection
+                while remaining synchronised.
             </p>
             <h2 class="description-title">Problems Faced</h2>
             <p class="description-text">
-                One of the key challenges we faced during this project was the learning process of adapting to C++ programming within Unreal Engine, as well as understanding how to effectively use behaviour trees
-                 and utility AI to create adaptable NPC behaviour. This required a lot of experimentation and iteration to get the desired results, as well as 
-                 troubleshooting and debugging to resolve issues that arose during development. Additionally, ensuring that both AI systems behaved the same in terms of behaviour was a challenge, 
-                 as they required different approaches to achieve the same results.
+                One of the key challenges we faced during this project was the learning process of understaning when to send RPCs to update client-side gameplay. This added layer of complexity
+                proved to be initially challenging as getting the logic to work on the server was straightforward but, replicating the same logic to clients required knowledge of how Unreal Engine
+                manages replication. But the more I faced this challenge, the more I understood when a function or variable should be replicated to ensure syncrhonised gameplay between clients.
+
             </p>
                 <br><br>
             <h2 class="description-title">Conclusion</h2>
             <p class="description-text">
-                Overall, this project was a valuable learning experience that helped me develop my skills in AI prograaming within Unreal Engine, 
-                as well as my understanding of different AI decision-making frameworks. It also provided insight into the strengths and weaknesses of behaviour trees and utility AI, 
-                and how to develop effective NPC behaviour using both approaches.
+                Overall, this project was a valuable learning experience that helped me develop my skills in programming for multiplayer in Unreal Engine as well as refining my C++ skills. 
+                I now have knowledge of the fundamentals of replication in UE5 while maintaining clean networking to ensure good server performance. 
             </p>
     </main>
 
