@@ -274,6 +274,12 @@ main {
     transform: scale(1.05);
 }
 
+.project-video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
 .project-video-container iframe.project-video {
     position: absolute;
     top: 0;
